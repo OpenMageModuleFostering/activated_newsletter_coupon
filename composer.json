@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Activated_Newsletter_Coupon",
+    "type": "magento-module",
+    "license": "EULA",
+    "homepage": "",
+    "description": "Send coupons on newsletter sign up.",
+    "authors": [
+    {
+        "name": "Activated Apps",
+        "email": "admin@activatedapps.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

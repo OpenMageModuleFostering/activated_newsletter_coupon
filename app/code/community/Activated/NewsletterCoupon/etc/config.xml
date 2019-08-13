@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+		<Activated_NewsletterCoupon>
+			<version>1.0.0</version>
+		</Activated_NewsletterCoupon>
+	</modules>
+	<global>
+		<models>
+			<newslettercoupon>
+				<class>Activated_NewsletterCoupon_Model</class>
+			</newslettercoupon>
+			<newsletter>
+				<rewrite>
+					<subscriber>Activated_NewsletterCoupon_Model_Subscriber</subscriber>
+				</rewrite>
+			</newsletter>
+		</models>
+		<helpers>
+			<newslettercoupon>
+				<class>Activated_NewsletterCoupon_Helper</class>
+			</newslettercoupon>
+		</helpers>
+		<template>
+			<email>
+				<newslettercoupon_view_template translate="label" module="newslettercoupon">
+					<label>Newsletter Coupon</label>
+					<file>newslettercoupon/newslettercoupon_view_template.html</file>
+					<type>html</type>
+				</newslettercoupon_view_template>
+			</email>
+		</template>
+		<template>
+			<email>
+				<newslettercoupon_view_confirmtemplate translate="label" module="newslettercoupon">
+					<label>Confirmation Newsletter Coupon</label>
+					<file>newslettercoupon/newslettercoupon_view_confirmtemplate.html</file>
+					<type>html</type>
+				</newslettercoupon_view_confirmtemplate>
+			</email>
+		</template>
+	</global>
+	<default>
+		<newslettercoupon>
+			<view>
+				<template>newsletter_coupon</template>
+			</view>
+		</newslettercoupon>
+	</default>
+	<frontend>
+		<routers>
+			<newsletter>
+				<use>standard</use>
+				<args>
+					<modules>
+						<Activated_NewsletterCoupon before="Mage_Newsletter">Activated_NewsletterCoupon</Activated_NewsletterCoupon>
+					</modules>
+				</args>
+			</newsletter>
+		</routers>
+	</frontend>
+</config>
