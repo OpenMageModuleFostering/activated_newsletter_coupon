@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Activated_Newsletter_Coupon</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license>EULA</license>
     <channel>community</channel>
     <extends/>
     <summary>Send coupons on newsletter sign up.</summary>
     <description>Using Activated Newsletter Coupon, you can create an incentive for your customers to sign up to your newsletter. Whether a static coupon or auto-generated, this module can handle it.</description>
-    <notes>Initial release</notes>
+    <notes>- Update for SUPEE6788</notes>
     <authors><author><name>Activated Apps</name><user>Owner</user><email>admin@activatedapps.com</email></author></authors>
-    <date>2015-09-14</date>
-    <time>07:09:28</time>
-    <contents><target name="magecommunity"><dir name="Activated"><dir name="NewsletterCoupon"><dir name="Helper"><file name="Data.php" hash="0bb7b9adbc08ad3cdf4fa1c3dd27dd54"/></dir><dir name="Model"><file name="NewsletterCoupon.php" hash="0af5b77c98412eb9be5138abdb7b8037"/><file name="Subscriber.php" hash="0b9eb71bfabaefd2b06939a6723b98c0"/></dir><dir name="controllers"><file name="SubscriberController.php" hash="5721379c9a0cab1c0cf807baa9db43d7"/></dir><dir name="etc"><file name="adminhtml.xml" hash="85b6f9a442c568ffe80699a63e618d1d"/><file name="config.xml" hash="ef8c1d0b3e4e309ace626f9172bc504a"/><file name="system.xml" hash="7d7e8c2309f5c73906242db443954b1b"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Activated_NewsletterCoupon.xml" hash="8332639258432e7a5293e71902bd613c"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><dir name="newslettercoupon"><file name="newslettercoupon_view_confirmtemplate.html" hash="f0e8df583ee9a8bc8fcfe3fe9515a3bc"/><file name="newslettercoupon_view_template.html" hash="d3b9d07b0d0b9f6fa08abea5a222a3a8"/></dir></dir></dir></dir></target></contents>
+    <date>2015-11-04</date>
+    <time>22:12:54</time>
+    <contents><target name="magecommunity"><dir name="Activated"><dir name="NewsletterCoupon"><dir name="Helper"><file name="Data.php" hash="0bb7b9adbc08ad3cdf4fa1c3dd27dd54"/></dir><dir name="Model"><file name="NewsletterCoupon.php" hash="0af5b77c98412eb9be5138abdb7b8037"/><file name="Subscriber.php" hash="0b9eb71bfabaefd2b06939a6723b98c0"/></dir><dir name="controllers"><file name="SubscriberController.php" hash="5721379c9a0cab1c0cf807baa9db43d7"/></dir><dir name="etc"><file name="adminhtml.xml" hash="85b6f9a442c568ffe80699a63e618d1d"/><file name="config.xml" hash="9fe9f6712be61a417482f60a78401208"/><file name="system.xml" hash="7d7e8c2309f5c73906242db443954b1b"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Activated_NewsletterCoupon.xml" hash="8332639258432e7a5293e71902bd613c"/></dir></target><target name="magelocale"><dir name="en_US"><dir name="template"><dir name="email"><dir name="newslettercoupon"><file name="newslettercoupon_view_confirmtemplate.html" hash="f0e8df583ee9a8bc8fcfe3fe9515a3bc"/><file name="newslettercoupon_view_template.html" hash="d3b9d07b0d0b9f6fa08abea5a222a3a8"/></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.4.0</min><max>5.6.12</max></php></required></dependencies>
 </package>
